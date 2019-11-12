@@ -1,0 +1,143 @@
+body {
+  background-color: #f7eb4d;
+}
+
+#p {
+  position: relative;
+  background-color: #57cdf9;
+  left: 200px;
+  top: 480px;
+  height: 400px;
+  width: 50px
+}
+
+#p2 {
+  position: relative;
+  left: 230px;
+  top: 80px;
+  height: 200px;
+  width: 130px;
+  border-radius: 0 90px 90px 0;
+  background-color: #57cdf9;
+}
+
+#p3 {
+  position: relative;
+  left: 250px;
+  top: -70px;
+  height: 100px;
+  width: 65px;
+  border-radius: 0 90px 90px 0;
+  background-color: #f7eb4d;
+}
+
+
+#l {
+  position: relative;
+  left: 300px;
+  top: 0px;
+  height: 300px;
+  width: 50px;
+  background-color: #f5b1e8;
+}
+
+#l2 {
+  position: relative;
+  left: 300px;
+  top: 0px;
+  height: 50px;
+  width: 300px;
+  background-color: #f5b1e8;
+}
+
+#a {
+  position: relative;
+  left: 450px;
+  top: -400px;
+  height: 300px;
+  width: 50px;
+  background-color: #ffb433;
+  transform: skew(-25deg)
+}
+
+#a2 {
+  position: relative;
+  left: 590px;
+  top: -700px;
+  height: 300px;
+  width: 50px;
+  background-color: #ffb433;
+  transform: skew(25deg)
+}
+
+#a3 {
+  position: relative;
+  left: 470px;
+  top: -850px;
+  height: 50px;
+  width: 150px;
+  background-color: #ffb433;
+}
+
+#y {
+position: relative;
+left: 780px;
+top: -1000px;
+height: 400px;
+width: 50px;
+background-color: #8aee63;
+transform: skew(-25deg)
+}
+
+.y2 {
+position: relative;
+left: 700px;
+top: -1400px;
+height: 250px;
+width: 50px;
+background-color: #8aee63;
+transform: skew(25deg)
+}
+
+.circle {
+position: absolute;
+background-color: white;
+width: 50px;
+height: 50px;
+border-radius: 30px;
+}
+
+.animation {
+animation-name: elongate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+}
+
+@keyframes elongate {
+  from {width: 300px;}
+  to {width: 1500px;}
+}
+
+.y2:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    background-color: pink;
+  }
