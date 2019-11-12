@@ -67,14 +67,16 @@ function random() {
 random()
 
 function RandomColorCircle() {
-  var color = document.getElementsByClassName("circle");
+  var circle = document.getElementsByClassName("circle");
   var random = Math.random();
   console.log(random);
+  for (i = 0; i < circle.length; i++){
   if (random < 0.25) {
-    document.circle.style.backgroundColor = "white";
+    circle[i].style.backgroundColor = "white";
   } else {
-    document.circle.style.backgroundColor = "#f5f3ca";
+    console.log("yes", circle)
+    circle[i].style.backgroundColor = "#faf7cc";
   }
-
+  }
 }
 RandomColorCircle()
